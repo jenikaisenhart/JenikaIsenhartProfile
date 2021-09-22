@@ -1,0 +1,71 @@
+* GENERAL STYLES */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    padding-top: 15px;
+    margin-right: 20px;
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+       
+} 
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a{
+    color: #ffff;
+}
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Sofia' ;
+    text-shadow: 3px 3px 3px #5e0247;
+    font-size: 60px;
+    color: rgb(255, 220, 246);
+}
+
+body {
+    background-color: #d292fc;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.header-image {
+    background-image: url(https://mikeputnamphoto.com/wp-content/uploads/2015/11/Oregon-Cascades-final-web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    
+}
+#profile-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 420px;
+    height: 420px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
