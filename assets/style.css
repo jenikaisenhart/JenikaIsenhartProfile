@@ -8,17 +8,17 @@
 
 /*NAVBAR*/
 
-nav{
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-bottom: 5px;
+nav {
+    background-color:#B97A95 ;
     text-align: right;
     font-family:'Architects Daughter', cursive ;
     font-size: 20px;
     font-weight: bold;
-    overflow: hidden;
-    background-color:#B97A95 ;
     position:fixed;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    overflow: hidden;
     top: 0; 
     width: 100%;
     z-index:1;
@@ -34,9 +34,10 @@ nav{
  }
 
 a{
+    color:#5e0247;
     padding-right: 10px;
-    color:#5e0247 ;
  }
+
  a:link {
     text-decoration: none;
  }
@@ -73,17 +74,23 @@ a{
     border-radius: 50%;
 }
 
-.header-intro{
-    font-family: 'Architects Daughter', cursive;
-    text-align: center;
+.header-intro {
     color: #5e0247;
+    text-shadow: 2px 2px 5px rgb(255, 220, 246) ;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
     font-size: 40px;
+    font-weight: bold;    
 }
 
 /*BODY AND HEADERS*/
 
 body {
     background-color:#B97A95 ;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -91,101 +98,99 @@ body {
     overflow-x: hidden; 
 }
 
-h1{
+h1 {
+    color: rgb(255, 220, 246);
+    text-shadow: 3px 3px 3px #5e0247;
     text-align: center;
     font-family: 'Cabin Sketch', cursive;
-    text-shadow: 3px 3px 3px #5e0247;
     font-size: 70px;
-    color: rgb(255, 220, 246);
     line-height: 5px;
 }
 
-h2{
-    font-family:'Architects Daughter', cursive;
-    font-size: 30px;
+h2 {
     color:#5e0046 ;
     text-shadow: 2px 2px 5px rgb(255, 220, 246) ;
+    text-align: center;
+    font-family:'Architects Daughter', cursive;
+    font-size: 35px;
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
 
 /*ABOUT ME*/
 
 .aboutme {
+    background-color: #370c4265;
+    text-align: center;
     margin-right: 50px;
     margin-left: 50px;
     margin-bottom: 50px;
     margin-top: 50px;
-    padding: 50px;
-    height: 500px;
-    border-radius: 30px;
-    background-color: #370c4265;
-    border: none;
-    text-align: center;
-   
-    
+    padding: 25px;
+    padding-bottom: 10px;
+    height: fit-content;
+    border-radius: 15px;
+    border: none; 
+    justify-content: center;
  }
 
  .aboutme img {
     max-height: 200px ;
-    background-color: transparent;
     float: left;
-    padding: 15px;
-    margin: 0px;
-
+    padding-top: 100px;
+    padding-right: 50px;
  }
 
- .aboutme p{
+ .aboutme p {
+        color:#52043d ;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
         justify-content: left;
         line-height: 2.0;
         word-spacing: 2px;
-        margin-right: 20px;
-        margin-left: 20px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 25px;
-        color:#52043d ;
-        overflow-x: scroll;
-        overflow: hidden;
+        margin-right: 25px;
+        margin-left: 25px;
+       
 }
     
 
 
 /*MY WORK*/
 
-.mywork{
+.mywork {
+    color:#5e0046;
+    text-align: center;
+    padding: 25px;
     margin-right: 50px;
     margin-left: 50px;
     margin-bottom: 50px;
-    padding: 60px;
-    height: 800px;
     border-radius: 30px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #370c4265;
-    color:#5e0046 ;
-    text-shadow: 2px 2px 5px rgb(255, 220, 246) ;
     border: none;
-    text-align: center;
-
  }
 
  .container {
-    display: flex;
-    flex-wrap: wrap;
+    position: center;
     justify-content: space-evenly;
-    padding: 5%;
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
   }
   
   .card {
-    border-style: groove;
+    color:#52043d;
+    background-color: #370c4265;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    max-width: 900px;
+    min-width: 900px;
+    border-style: ridge;
     border-color: #5e0046;
-    border-radius: 10px;
+    border-radius: 15px;
     border-width: 2px;
-    margin: 1%;
-    margin-bottom: 2%;
-    max-width: 300px;
-    min-width: 300px;
-    padding: 2%;
-    width: 49%;
-  
+    margin: 10px;
+    margin-bottom: 35px;
+    padding-bottom: 25px;
   }
   
   .card:hover {
@@ -194,74 +199,153 @@ h2{
   
   .card-header {
     background-color:#B97A95;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 25px;
+    position: center;
     border-color: rgb(255, 220, 246);
     border-radius: 10px;
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
-    font-size: 150%;
-    margin-bottom: 2%;
-    margin-top: -70px;
-    position: relative;
     z-index: 0; 
   }
   
-  .card-header:hover{
-    box-shadow: 0 5px 15px #5e0046;   
-  }
+/*CONTACT ME*/ 
 
-  .workpreview{
-    border-radius: 10px;
-    
-}
-
-/*CONTACT ME*/
-
-.contactme{
+.contactme {
   color:#5e0046;   
   text-shadow: 2px 2px 2px #5e0046;   
   background:rgb(255, 220, 246); 
   text-align: center;
-  padding-bottom: 10px;
-  padding-top: 10px;
- 
+  padding-bottom: 5px;
+  padding-top: 5px;
  }
- .contactme button{
+
+ .contactme button {
+    color:#5e0046 ;
+    background-color: #B97A95;   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: larger;
     font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 50px ;
     margin-left: 20px;
     margin-right: 20px;
-    color:#5e0046 ;
-    background-color: #B97A95;
     border-radius: 25px;
     border: none;
     box-shadow: 1px 1px 20px #410030  
  }
 
- .contactme button:hover{
+ .contactme button:hover {
     color: rgb(255, 220, 246);
-    text-shadow: 1px 1px 20px #5e0046;
-
+    text-shadow: 1px 1px 20px #5e0046
  }
- .contactme img{
+
+ .contactme img {
     max-height: 200px;
-    
 }
 
 /*FOOTER*/
 
-h4{
+h4 {
+    color:#5e0046 ;
     text-align: center;
+    font-family:'Architects Daughter', cursive;
+}
+    
+/* Tablets */
+@media screen and (max-width: 992px) {
+  .aboutme p{
+    font-size: 40px;
+
+  }
+
+  h4 {
+    display: none;
 }
 
-/* MEDIA SCREEN FOR PHONES*/
-@media screen and (max-width: 768px){
-
-}    
-
-
-/*MEDIA SCREEN FOR TABLETS*/
-@media screen and (min-width: 992px){
 
 }
+
+/* Large smartphones */
+@media screen and (max-width: 768px) {
+ 
+  nav {
+    display: none;
+  }
+
+  .header-image {
+   display: none;
+  }
+
+  .header-intro {
+    font-size: 80px;
+
+  }
+
+  h1 {
+    font-size: 110px;
+
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  .aboutme {
+    height: fit-content;
+    margin-right: 25px;
+    margin-left: 25px;
+
+  }
+
+  .aboutme p{
+    font-size: 40px;
+
+
+  }
+
+  .mywork{
+    margin-right: 25px;
+    margin-left: 25px;
+
+  }
+  
+  h4 {
+      display: none;
+  }
+
+}
+
+/* Small smartphones */
+@media screen and (max-width: 576px) {
+  nav {
+    display: none;
+  }
+
+  .header-image {
+   display: none;
+  }
+
+  }
+  .aboutme {
+    height: fit-content;
+    margin-right: 25px;
+    margin-left: 25px;
+
+  }
+
+  .aboutme p{
+    font-size: 25px;
+
+  }
+
+  .mywork{
+    height: fit-content;
+    margin-right: 0px;
+    margin-left: 0px;
+
+  }
+  
+  h4 {
+      display: none;
+  }
+
